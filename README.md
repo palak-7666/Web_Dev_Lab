@@ -1,4 +1,5 @@
-# My project
+# My Project
+
 ## About
 This is my personal portfolio website created as part of my Web Development Lab assignment.
 
