@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+  border-bottom: 1px solid ;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.nav-links .btn-primary {
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+}
+
+.nav-links .btn-primary:hover {
+  color: #ffffff;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border-right: 1px solid;
+  padding: 1.5rem;
+}
+
+.sidebar-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar-list a {
+  display: block;
+  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.page-intro {
+  margin-bottom: 2rem;
+}
+
+.page-intro h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  background-color: rgb(135, 115, 115);
+}
+
+.card {
+  border: 1px solid;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: #333;
+}
+
+.badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #555;
+  background-color: transparent;
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  background-color: transparent;
+  color: #222;
+}
+
+.card p {
+  color: #333;
+  background-color: transparent;
+  font-size: 0.95rem;
+}
+
+.card-action {
+  margin-top: auto;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  grid-area: footer;
+  border-top: 1px solid ;
+  padding: 1.25rem 2rem;
+  font-size: 0.9rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}

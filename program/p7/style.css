@@ -1,0 +1,30 @@
+:root{
+  primary-color:Pink;
+  text-decoration:color(pink) ;
+  background-color: lightgrey;
+  heading: size 30px;
+  paragraph-size :16px;
+  space: 20px;
+
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
+  color: white;
+}
+
+h1,h2,h3{
+  font-size: 17px;
+  color:black
+}
+
+p{
+  font-size: 16px;
+  line-height: 2.0;
+
+}
+button{
+  background-color: aqua;
+  color:aliceblue;
+  padding: 2px 10px;
+}

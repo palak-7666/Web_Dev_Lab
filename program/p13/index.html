@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="site-header">
+      <a href="#" class="brand">DevSpace</a>
+      <nav class="nav-links">
+        <a href="#">Dashboard</a>
+        <a href="#">Projects</a>
+        <a href="#">Notes</a>
+        <a href="#" class="btn-primary">Profile</a>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <p class="sidebar-title">Menu</p>
+      <ul class="sidebar-list">
+        <li><a href="#" class="active">Overview</a></li>
+        <li><a href="#">Coursework</a></li>
+        <li><a href="#">Assignments</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <section class="page-intro">
+        <h1>Shared Component Layout</h1>
+        <p>Outer page shell and card matrix built with CSS Grid; navigation bars and card internals aligned with Flexbox.</p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <div class="card-header">
+            <span class="badge">Module 01</span>
+            <span class="meta">4 Lessons</span>
+          </div>
+          <h2>HTML Semantics</h2>
+          <p>Structuring accessible documents using header, nav, main, article, and aside landmarks.</p>
+          <a href="#" class="card-action">Open Module</a>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="badge">Module 02</span>
+            <span class="meta">6 Lessons</span>
+          </div>
+          <h2>Flexbox Alignment</h2>
+          <p>Building 1D navigation bars, button groups, and flexible component rows that adapt to content width.</p>
+          <a href="#" class="card-action">Open Module</a>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="badge">Module 03</span>
+            <span class="meta">5 Lessons</span>
+          </div>
+          <h2>CSS Grid Systems</h2>
+          <p>Defining 2D macro page skeletons and auto-fitting card galleries without complex media queries.</p>
+          <a href="#" class="card-action">Open Module</a>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p> 2026 DevSpace</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Docs</a>
+        <a href="#">Privacy</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
